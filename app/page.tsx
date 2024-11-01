@@ -16,7 +16,6 @@ import icon3 from "./Public/Icon-2.png"
 import image2 from "./Public/Col.png"
 import image3 from "./Public/Col (1).png"
 import image4 from "./Public/Col (2).png"
-import image5 from "./Public/Screen/Desktop.png"
 import screen from "./Public/Screen/Desktop.png"
 
 export default function Home() {
