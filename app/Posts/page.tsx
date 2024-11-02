@@ -1,12 +1,19 @@
-'use client'
+'use client';
 
 import { useEffect, useState } from "react";
 
+type Post = {
+  id: number;
+  title: string;
+  body: string;
+};
+
 function Posts() {
-    const [posts, setPosts] = useState([]);
+    // Inicializar el estado posts con un tipo explícito
+    const [posts, setPosts] = useState<Post[]>([]); // Aquí especificamos que es un array de Post
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-  
+    const [error, setError] = useState<string | null>(null); // Puedes definir error como string o null
+
     const fetchPosts = async () => {
       try {
         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -15,11 +22,12 @@ function Posts() {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         
-        const data = await response.json();
+        const data: Post[] = await response.json(); // Aquí especificamos que data es un array de Post
         setPosts(data.slice(0, 10));
       } catch (error) {
-        console.error('Error fetching Posts:', error);
-        setError(error.message);
+        const err = error as Error;
+        console.error(err.message);
+        setError(err.message); // Asegúrate de establecer el error en el estado si lo deseas mostrar
       } finally {
         setLoading(false);
       }
@@ -36,7 +44,7 @@ function Posts() {
     if (error) {
       return <p>Error: {error}</p>;
     }
-    
+
     return (
         <div className="px-4 py-12 flex flex-col justify-center items-center">
           <h2 className="text-center text-3xl font-bold my-8">Otros Artículos</h2>

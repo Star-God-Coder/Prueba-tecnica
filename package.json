@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build:css": "tailwindcss build src/styles.css -o out/styles.css",
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && gh-pages -d out",
+    "deploy": "npm run build && gh-pages -d out -f",
     "start": "next start",
     "lint": "next lint"
   },
