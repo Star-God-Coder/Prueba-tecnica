@@ -16,16 +16,15 @@ se consume la api https://jsonplaceholder.typicode.com/posts, se puede acceder a
    ```bash
    git clone https://github.com/Star-God-Coder/Prueba-tecnica.git
    cd Prueba-tecnica
-Instala las dependencias:
+2. Instala las dependencias:
 
-bash
- 
-npm install
-Inicia el servidor de desarrollo:
+   ```bash
+   npm install
 
-bash
- 
-npm run dev
+3. Inicia el servidor de desarrollo:
+   ```bash 
+   npm run dev
+
 El proyecto estará disponible en http://localhost:3000.
 
 ## Scripts Disponibles
