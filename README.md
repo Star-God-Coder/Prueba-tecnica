@@ -10,8 +10,8 @@
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd tu-repositorio
+   git clone https://github.com/Star-God-Coder/Prueba-tecnica.git
+   cd Prueba-tecnica
 Instala las dependencias:
 
 bash
