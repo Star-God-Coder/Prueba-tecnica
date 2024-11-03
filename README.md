@@ -5,6 +5,10 @@
 - **Tailwind CSS** para un estilo limpio y eficiente.
 - Diseño **responsive** adaptable a dispositivos móviles y de escritorio.
   
+
+## Consumicion de Api
+se consume la api https://jsonplaceholder.typicode.com/posts, se puede acceder a ella desde el header en el link que dice Posts o iendo a http://localhost:3000/Posts
+
 ## Instalación
 
 1. Clona el repositorio:
