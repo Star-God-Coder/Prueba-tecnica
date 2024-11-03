@@ -5,11 +5,6 @@
 - **Tailwind CSS** para un estilo limpio y eficiente.
 - Diseño **responsive** adaptable a dispositivos móviles y de escritorio.
   
-## Capturas de Pantalla
-
-![Homepage Screenshot](https://via.placeholder.com/600x400)  
-*Ejemplo de la página principal*
-
 ## Instalación
 
 1. Clona el repositorio:
